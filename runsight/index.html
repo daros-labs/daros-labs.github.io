@@ -211,7 +211,12 @@
     document.querySelector('.lang-tab[onclick="switchLang(\'' + lang + '\')"]').classList.add('active');
     document.getElementById('section-' + lang).classList.add('active');
   }
-  if (navigator.language.startsWith('ko')) {
+  const hash = window.location.hash;
+  if (hash.includes("-en")) {
+    switchLang("en");
+  } else if (hash.includes("-ko")) {
+    switchLang("ko");
+  } else if (navigator.language.startsWith("ko")) {
     switchLang('ko');
   } else {
     switchLang('en');
