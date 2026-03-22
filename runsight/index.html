@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RunSight — Support</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f5f5f7; color: #1d1d1f; line-height: 1.6; }
+    header { background: #000; color: #fff; padding: 24px 20px; text-align: center; }
+    header h1 { font-size: 28px; font-weight: 700; }
+    header p { color: #aaa; margin-top: 4px; font-size: 14px; }
+    .lang-tabs { display: flex; justify-content: center; background: #fff; border-bottom: 1px solid #e0e0e0; }
+    .lang-tab { padding: 12px 32px; cursor: pointer; font-size: 15px; font-weight: 500; border-bottom: 3px solid transparent; color: #666; transition: all 0.2s; }
+    .lang-tab.active { border-bottom-color: #000; color: #000; }
+    .content { max-width: 720px; margin: 0 auto; padding: 32px 20px 64px; }
+    .section { display: none; }
+    .section.active { display: block; }
+    h2 { font-size: 22px; font-weight: 700; margin: 32px 0 12px; }
+    h3 { font-size: 17px; font-weight: 600; margin: 20px 0 8px; color: #333; }
+    p, li { font-size: 15px; color: #444; margin-bottom: 8px; }
+    ul { padding-left: 20px; }
+    .faq-item { background: #fff; border-radius: 12px; padding: 20px; margin-bottom: 12px; }
+    .faq-item h3 { margin-top: 0; color: #000; }
+    .contact { background: #fff; border-radius: 12px; padding: 24px; margin-top: 32px; text-align: center; }
+    .contact a { color: #0071e3; text-decoration: none; }
+    .privacy { background: #fff; border-radius: 12px; padding: 24px; margin-top: 32px; }
+    .privacy h2 { margin-top: 0; }
+    table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 14px; }
+    th, td { text-align: left; padding: 8px 12px; border: 1px solid #e0e0e0; }
+    th { background: #f5f5f7; font-weight: 600; }
+    footer { text-align: center; padding: 24px; color: #aaa; font-size: 13px; }
+    footer a { color: #aaa; }
+  </style>
+</head>
+<body>
+<header>
+  <h1>RunSight</h1>
+  <p>Running Analytics for iPhone</p>
+</header>
+
+<div class="lang-tabs">
+  <div class="lang-tab active" onclick="switchLang('ko')">한국어</div>
+  <div class="lang-tab" onclick="switchLang('en')">English</div>
+</div>
+
+<div class="content">
+
+  <!-- KOREAN -->
+  <div class="section active" id="section-ko">
+    <h2>앱 소개</h2>
+    <p><strong>RunSight</strong>는 Apple 건강 앱(HealthKit)에 기록된 러닝 데이터를 심층 분석하여 개인화된 훈련 인사이트를 제공하는 iOS 전용 달리기 분석 앱입니다.</p>
+
+    <h2>주요 기능</h2>
+    <h3>📊 대시보드</h3>
+    <p>주간/월간 누적 거리, 시간, 칼로리, 평균 페이스를 한눈에 확인하세요.</p>
+    <h3>🏃 러닝 상세 분석</h3>
+    <ul>
+      <li>페이스 분할(Splits): km별 페이스 바 차트</li>
+      <li>심박수 구간 분포: Zone 1~5 시간 비율</li>
+      <li>GPS 경로 지도 및 고도 프로필</li>
+      <li>이전 런과 페이스 비교</li>
+    </ul>
+    <h3>🧠 훈련 인사이트</h3>
+    <ul>
+      <li>ACWR 부상 위험 지수</li>
+      <li>페이스 트렌드 분석</li>
+      <li>심박수 드리프트 (유산소 효율)</li>
+      <li>VO2max 추정 및 등급</li>
+      <li>훈련 다양성 분석</li>
+    </ul>
+
+    <h2>자주 묻는 질문</h2>
+    <div class="faq-item">
+      <h3>Q. 앱이 Apple 건강 앱에 어떻게 연결되나요?</h3>
+      <p>최초 실행 시 HealthKit 데이터 접근 권한을 요청합니다. 권한 변경: 설정 → 건강 → RunSight</p>
+    </div>
+    <div class="faq-item">
+      <h3>Q. 러닝 데이터가 보이지 않아요.</h3>
+      <p>설정 → 건강 → RunSight에서 모든 항목이 허용되어 있는지 확인하세요. 설정 탭 하단 "테스트 데이터 추가" 버튼으로 샘플 데이터를 추가할 수 있습니다.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Q. GPS 지도나 페이스 분할이 보이지 않아요.</h3>
+      <p>운동 기록 당시 위치 기능이 켜져 있어야 저장됩니다. 실내 트레드밀 운동의 경우 GPS 데이터가 없을 수 있습니다.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Q. 앱 추적 투명성(ATT) 팝업이 나타나는 이유는?</h3>
+      <p>Google AdMob 광고의 관련성을 높이기 위해 IDFA를 사용합니다. 거부해도 모든 기능을 정상적으로 사용할 수 있습니다.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Q. 내 건강 데이터가 외부로 전송되나요?</h3>
+      <p>아니요. 모든 HealthKit 데이터는 기기 내에서만 처리되며 외부 서버로 전송되지 않습니다.</p>
+    </div>
+
+    <div class="contact">
+      <h2>문의</h2>
+      <p>📧 <a href="mailto:bakemaster.app@gmail.com">bakemaster.app@gmail.com</a></p>
+    </div>
+
+    <div class="privacy" id="privacy-ko">
+      <h2>개인정보 처리방침</h2>
+      <p><em>최종 업데이트: 2026년 3월 14일</em></p>
+      <h3>1. 수집하는 정보</h3>
+      <p><strong>HealthKit 건강 데이터</strong>: 러닝 기록, 심박수, GPS 경로, 걸음 수. 기기 내에서만 처리되며 외부로 전송되지 않습니다.</p>
+      <p><strong>광고 관련 데이터 (Google AdMob)</strong>: 광고 식별자(IDFA, ATT 동의 시), 기기 정보, 앱 사용 패턴. <a href="https://policies.google.com/privacy">Google 개인정보처리방침</a> 적용.</p>
+      <h3>2. 데이터 사용 목적</h3>
+      <table>
+        <tr><th>데이터</th><th>사용 목적</th></tr>
+        <tr><td>HealthKit 건강 데이터</td><td>러닝 분석, 훈련 인사이트 제공</td></tr>
+        <tr><td>광고 식별자 (IDFA)</td><td>맞춤형 광고 (동의 시)</td></tr>
+        <tr><td>기기/앱 사용 정보</td><td>광고 최적화</td></tr>
+      </table>
+      <h3>3. 데이터 공유</h3>
+      <p>Google AdMob(광고 서비스) 및 법적 요구 외에는 제3자와 공유하지 않습니다.</p>
+      <h3>4. 사용자 권리</h3>
+      <ul>
+        <li>설정 → 건강 → RunSight: 데이터 접근 권한 철회</li>
+        <li>설정 → 개인정보 보호 → 추적: 광고 추적 거부</li>
+      </ul>
+      <h3>5. 문의</h3>
+      <p><a href="mailto:bakemaster.app@gmail.com">bakemaster.app@gmail.com</a></p>
+    </div>
+  </div>
+
+  <!-- ENGLISH -->
+  <div class="section" id="section-en">
+    <h2>About</h2>
+    <p><strong>RunSight</strong> is an iOS running analytics app that deeply analyzes your running data from Apple Health (HealthKit) to deliver personalized training insights.</p>
+
+    <h2>Key Features</h2>
+    <h3>📊 Dashboard</h3>
+    <p>Weekly/monthly totals — distance, time, calories, average pace — at a glance.</p>
+    <h3>🏃 Detailed Run Analysis</h3>
+    <ul>
+      <li>Pace Splits: Per-km pace bar chart</li>
+      <li>Heart Rate Zone Distribution: Time in Zones 1–5</li>
+      <li>GPS Route Map & Elevation Profile</li>
+      <li>Compare vs. previous runs</li>
+    </ul>
+    <h3>🧠 Training Insights</h3>
+    <ul>
+      <li>ACWR Injury Risk warnings</li>
+      <li>Pace trend analysis</li>
+      <li>Heart rate drift (aerobic efficiency)</li>
+      <li>VO2max estimate and classification</li>
+      <li>Training variety analysis</li>
+    </ul>
+
+    <h2>FAQ</h2>
+    <div class="faq-item">
+      <h3>Q. How does the app connect to Apple Health?</h3>
+      <p>On first launch, the app requests HealthKit permission. To change: Settings → Health → RunSight</p>
+    </div>
+    <div class="faq-item">
+      <h3>Q. No running data is showing up.</h3>
+      <p>Check Settings → Health → RunSight and ensure all items are allowed. Use "Add Test Data" at the bottom of the Settings tab to add sample runs.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Q. No GPS map or pace splits are showing.</h3>
+      <p>GPS routes require location to be enabled during the workout. Treadmill runs may not have GPS data.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Q. Why does the ATT popup appear?</h3>
+      <p>The app uses IDFA for more relevant AdMob ads. Denying tracking won't affect any app features.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Q. Is my health data sent to any servers?</h3>
+      <p>No. All HealthKit data is processed on-device only and never transmitted externally.</p>
+    </div>
+
+    <div class="contact">
+      <h2>Contact</h2>
+      <p>📧 <a href="mailto:bakemaster.app@gmail.com">bakemaster.app@gmail.com</a></p>
+    </div>
+
+    <div class="privacy" id="privacy-en">
+      <h2>Privacy Policy</h2>
+      <p><em>Last updated: March 14, 2026</em></p>
+      <h3>1. Information We Collect</h3>
+      <p><strong>Health Data (HealthKit)</strong>: Running records, heart rate, GPS routes, step count. Processed on-device only, never transmitted.</p>
+      <p><strong>Advertising Data (Google AdMob)</strong>: IDFA (with ATT consent), device info, app usage. Subject to <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</p>
+      <h3>2. How We Use Your Data</h3>
+      <table>
+        <tr><th>Data</th><th>Purpose</th></tr>
+        <tr><td>HealthKit health data</td><td>Running analysis, training insights</td></tr>
+        <tr><td>Advertising Identifier (IDFA)</td><td>Personalized ads (with consent)</td></tr>
+        <tr><td>Device/app usage data</td><td>Ad optimization</td></tr>
+      </table>
+      <h3>3. Data Sharing</h3>
+      <p>We share data only with Google AdMob (ad delivery) and when required by law.</p>
+      <h3>4. Your Rights</h3>
+      <ul>
+        <li>Settings → Health → RunSight: Revoke data access</li>
+        <li>Settings → Privacy & Security → Tracking: Opt out of ad tracking</li>
+      </ul>
+      <h3>5. Contact</h3>
+      <p><a href="mailto:bakemaster.app@gmail.com">bakemaster.app@gmail.com</a></p>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <p>© 2026 <a href="https://daros-labs.github.io">daros labs</a></p>
+</footer>
+
+<script>
+  function switchLang(lang) {
+    document.querySelectorAll('.lang-tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+    document.querySelector('.lang-tab[onclick="switchLang(\'' + lang + '\')"]').classList.add('active');
+    document.getElementById('section-' + lang).classList.add('active');
+  }
+  if (navigator.language.startsWith('ko')) {
+    switchLang('ko');
+  } else {
+    switchLang('en');
+  }
+</script>
+</body>
+</html>
